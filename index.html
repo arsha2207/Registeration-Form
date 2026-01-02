@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>BOLERO</h1>
+        <h3>DRIVE YOUR PASSION</h3>
+        <h2>Registration Form</h2>
+      </header>
+      <main>
+        <form action="">
+          <div class="info">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="info">
+            <div><label for="mobile">Mobile</label>
+            <input
+              type="tel"
+              id="mobile"
+              pattern="[0-9]{10}"
+              name="mobile"
+              required
+            /></div>
+            <div><label for="password">Password:</label>
+            <input type="password" name="password" required /></div>
+          </div>
+          <div class="info">
+            <div><label for="gender">Gender</label>
+            <select id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Others</option>
+            </select></div>
+            <div><label for="dob">Date of Birth</label>
+            <input type="date" id="dob" max="31-12-2007" required /></div>
+          </div>
+          <div class="info">
+            <div>
+              <label for="food preference" name="food">Food Preference</label>
+              <div><input type="radio" id="veg" name="food" />
+              <label for="veg">Vegetarian</label>
+              <input type="radio" id="non-veg" name="food" />
+              <label for="non-veg">Non-Vegetarian</label></div>
+            </div>
+            <div>
+              <label for="session">Sessions you want to attend</label>
+              <div><input type="checkbox" id="session1" />
+              <label for="session1">Session 1</label>
+              <input type="checkbox" id="session2" />
+              <label for="session2">Session 2</label></div>
+            </div>
+          </div>
+          <button>Register</button>
+        </form>
+      </main>
+      <footer>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </footer>
+    </div>
+  </body>
+</html>
